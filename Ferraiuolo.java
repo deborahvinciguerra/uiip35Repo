@@ -4,8 +4,9 @@ public class Ferraiuolo {
 
 	public static void main(String[] args) {
 		
+		String nome = "Giacomo";
 		String cognome = "Ferraiuolo";
-		System.out.println(cognome);
+		System.out.println(nome+" "+cognome);
 	}
 
 }
