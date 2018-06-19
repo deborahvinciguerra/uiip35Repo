@@ -10,15 +10,16 @@ public class Client {
 
 	public static void main(String[] args) {
 
-		 
+		
 		//Creazione Francesco La Gala
 		//Indirizzo(String via, int civico, String citta, String cap, String provincia, String regione)
-        Indirizzo i1= new Indirizzo ("vico lopa",18,"casamarciano","80032","NA","campania");
-        Date d1= new Date("12/12/1990");
+        Indirizzo indirizzoFrancesco= new Indirizzo ("vico lopa",18,"casamarciano","80032","NA","campania");
+        Date dataFrancesco= new Date("12/12/1990");
         //Persona(String nome, String cognome, Date dataDiNascita, Indirizzo indirizzo, String regione)
-        Persona p1= new Persona ("francesco","la gala",d1,i1);
-        System.out.println("Nome= "+p1.getNome()+"\nCognome= "+p1.getCognome());
-        System.out.println(p1.getIndirizzo().toString()+"Età= "+ Utility.calcolaEta(p1));
+        System.out.println("***Francesco La Gala***");
+        Persona personaFrancesco= new Persona ("francesco","la gala",dataFrancesco,indirizzoFrancesco);
+        System.out.println("Nome= "+personaFrancesco.getNome()+"\nCognome= "+personaFrancesco.getCognome());
+        System.out.println(personaFrancesco.getIndirizzo().toString()+"Età= "+ Utility.calcolaEta(personaFrancesco));
 
         //Creazione Angelo Clemente
         //Indirizzo(String via, int civico, String citta, String cap, String provincia, String regione)
@@ -26,8 +27,10 @@ public class Client {
         Date dataAngelo= new Date("12/12/1993");
         //Persona(String nome, String cognome, Date dataDiNascita, Indirizzo indirizzo, String regione)
         Persona personaAngelo= new Persona ("Angelo","Clemente",dataAngelo,indirizzoAngelo);
-        System.out.println(personaAngelo.getIndirizzo().toString()+"Età= "+ Utility.calcolaEta(personaAngelo));
-        System.out.println("Nome= "+personaAngelo.getNome()+"\nCognome= "+personaAngelo.getCognome());
+        System.out.println("****ANGELO CLEMENTE******");
+        System.out.println("Nome= "+personaAngelo.getNome()+" , Cognome= "+personaAngelo.getCognome());
+        System.out.println(personaAngelo.getIndirizzo());
+        System.out.println("Età: " + Utility.calcolaEta(personaAngelo));
         
         // Creazione Domenico Guida
         Date dataDomenico = new Date("18/06/1989");
@@ -63,7 +66,7 @@ public class Client {
         //stampa persona
         System.out.println("***Antonio Pagliaro***");
         System.out.println(pagliaro.getNome()+" "+pagliaro.getCognome());
-        System.out.println("Indirizzo: "+pagliaro.getIndirizzo());
+        System.out.println(pagliaro.getIndirizzo());
         System.out.println("Età: "+Utility.calcolaEta(pagliaro.getDataDiNascita())+" anni");
        
         
@@ -72,22 +75,28 @@ public class Client {
         int età3= Utility.calcolaEta(d3);
         Indirizzo i3=new Indirizzo ("via variante est",2,"Avellino ","83030","AV","Campania");
         Persona p3=new Persona("Fabio", "Spagnuolo", d3 , i3);
-         System.out.println(p3.getNome()+" "+ p3.getCognome()+"\n"+p3.getIndirizzo()+"età="+età3+"anni");
+        System.out.println("\n"+"***Fabio Spagnuolo***");
+        System.out.println(p3.getNome()+" "+ p3.getCognome());
+         System.out.println	 (p3.getIndirizzo());
+         System.out.println("età:"+età3+"anni");
         
         // Creazione persona - Fabio Irno
+        System.out.println("***Fabio Irno***");
         Indirizzo indirizzo1 = new Indirizzo("Corso Caracciolo",70,"Mercato San Severino","84085","Salerno","Campania");
  		Date nascita1 = new Date("01/03/1987");
- 		Persona fabio = new Persona("Fabio","Irno",nascita1,indirizzo1);
-		System.out.println(fabio.getNome()+" "+fabio.getCognome()+"\n"+indirizzo1.toString()+"Età = "+Utility.calcolaEta(nascita1)+" anni");
-		
+
 				
 
-		ArrayList<Persona> lista = new ArrayList<Persona>();
+ 		Persona fabio = new Persona("Fabio","Irno",nascita1,indirizzo1);
+		System.out.println(fabio.getNome()+" "+fabio.getCognome()+"\n"+indirizzo1.toString()+" \nEtà = "+Utility.calcolaEta(nascita1)+" anni");
+		System.out.println("************");
+
+ 		ArrayList<Persona> lista = new ArrayList<Persona>();
 		
 		lista.add(gabriella);
         lista.add(personaDomenico);
         lista.add(personaAngelo);
-        lista.add(p1);
+        lista.add(personaFrancesco);
         lista.add(giacomo);
         lista.add(fabio);
         lista.add(pagliaro);
@@ -98,8 +107,11 @@ public class Client {
         System.out.println("Persone residenti in campania");
         for(Persona p : residentiInCampania) {
         	System.out.println("Nome: "+p.getNome()+" Cognome: "+p.getCognome());
+        	
+        	
         }
-    
+        
+    LaGala.piuGiovanePiuAnziano(lista);
 	}
 
 }
