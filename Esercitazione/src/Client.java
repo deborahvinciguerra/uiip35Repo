@@ -91,11 +91,9 @@ public class Client {
         Indirizzo indirizzo1 = new Indirizzo("Corso Caracciolo",70,"Mercato San Severino","84085","Salerno","Campania");
 		Date nascita1 = new Date("01/03/1987");
 		Persona fabio = new Persona("Fabio","Irno",nascita1,indirizzo1);
-		Utility uf = new Utility();
-		int eta1 = u.calcolaEta(nascita1);
-
+			
 		System.out.println(fabio.getNome()+" "+fabio.getCognome()+"\n"+
-				indirizzo.toString()+"Età = "+eta1+" anni");
+				indirizzo1.toString()+"Età = "+Utility.calcolaEta(nascita1)+" anni");
 		
 				
 		listaPersone.add(fabio);
