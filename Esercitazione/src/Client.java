@@ -34,7 +34,7 @@ public class Client {
         Indirizzo indirizzoDomenico = new Indirizzo("Via Campitiello", 4, "Limatola", "82030", "BN", "Campania");
         Persona personaDomenico = new Persona ("Domenico", "Guida", dataDomenico, indirizzoDomenico);
         System.out.println("Nome e Cognome: "+ personaDomenico.getNome() + " " + personaDomenico.getCognome());
-        System.out.println("Indirizzo: " + personaDomenico.getIndirizzo().toString());
+        System.out.println(personaDomenico.getIndirizzo().toString());
         System.out.println("Età: "+ Utility.calcolaEta(personaDomenico));
 
 		// Creazione persona - Giacomo Ferraiuolo
@@ -60,9 +60,11 @@ public class Client {
         Persona pagliaro= new Persona ("Antonio","Pagliaro",nascitaPagliaro,indirizzoPagliaro);
         
         //stampa persona
+        System.out.println("***Antonio Pagliaro***");
         System.out.println(pagliaro.getNome()+" "+pagliaro.getCognome());
-        System.out.println("Età: "+Utility.calcolaEta(pagliaro.getDataDiNascita())+" anni");
         System.out.println("Indirizzo: "+pagliaro.getIndirizzo());
+        System.out.println("Età: "+Utility.calcolaEta(pagliaro.getDataDiNascita())+" anni");
+       
         
         //creazione fabio spagnuolo
         Date d3=new Date("27/06/1995");
