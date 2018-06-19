@@ -50,7 +50,14 @@ public class Client {
 				indirizzo.toString()+"\nEtà = "+eta+" anni");
 
 		//Creazione Gabriella Conte
+<<<<<<< HEAD
         Persona gabriella = new Persona("Gabriella","Conte",new Date("18/05/1988"),new Indirizzo("via amatucci",14,"Avellino","83100","AV","Campania"));
+=======
+
+        Persona gabriella = new Persona("Gabriella","Conte",new Date("18/04/88"),new Indirizzo("via amatucci",14,"Avellino","83100","AV","Campania"));
+
+        
+>>>>>>> b716ee7f1650896165667e2a7f1f0495ddf052b3
         System.out.println("******* Gabriella Conte ******");
         System.out.println(gabriella.getNome()+" "+gabriella.getCognome());
         System.out.println("Indirizzo: "+gabriella.getIndirizzo());
@@ -111,6 +118,7 @@ public class Client {
         	
         }
         
+<<<<<<< HEAD
     LaGala.piuGiovanePiuAnziano(lista);
     
     Persona giovane = Ferraiuolo.cercaYounger(lista);
@@ -118,6 +126,13 @@ public class Client {
     Persona anziano = Ferraiuolo.cercaOlder(lista);
     System.out.println(anziano.getNome()+" "+anziano.getCognome());
     
+=======
+        System.out.println(Clemente.trovaMinimo(lista));
+        
+        System.out.println(Clemente.trovaMassimo(lista));
+    
+        LaGala.piuGiovanePiuAnziano(lista);
+>>>>>>> b716ee7f1650896165667e2a7f1f0495ddf052b3
 	}
 
 }

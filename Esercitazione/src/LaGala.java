@@ -4,23 +4,31 @@ public class LaGala {
 
 	public  static void piuGiovanePiuAnziano(ArrayList<Persona> listaPersone){
 
-		Persona tx= new Persona();
+		int eta=0;
+		int min=200;
+		Persona maggiore= new Persona();
+		Persona minore= new Persona();
 
-		for(Persona p: listaPersone) {
 			for (Persona q: listaPersone) {
-				if (Utility.calcolaEta(p)<Utility.calcolaEta(q))
-			{tx=p;
-					p=q;
-				    q=tx;}
+				if (Utility.calcolaEta(q)>eta){
+			        eta= Utility.calcolaEta(q);
+			        maggiore =q;
+					
+				    }
+                if (Utility.calcolaEta(q)<min) {
+                	min= Utility.calcolaEta(q);
+                			minore=q;
+				    	
+				    }
 				}
 
 			
 
-		}
 		
 		
-		System.out.println("Il più anziano è "+listaPersone.get(0).getNome());
-		System.out.println("Il più giovane è "+listaPersone.get((listaPersone.size()-1)).getNome());
+		
+		System.out.println("Il più anziano è "+maggiore.getNome()+" "+maggiore.getCognome());
+		System.out.println("Il più giovane è "+minore.getNome()+" "+minore.getCognome());
 	}
 
 }
