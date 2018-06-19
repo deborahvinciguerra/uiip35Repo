@@ -63,7 +63,7 @@ public class Client {
         //stampa persona
         System.out.println("***Antonio Pagliaro***");
         System.out.println(pagliaro.getNome()+" "+pagliaro.getCognome());
-        System.out.println("Indirizzo: "+pagliaro.getIndirizzo());
+        System.out.println(pagliaro.getIndirizzo());
         System.out.println("Età: "+Utility.calcolaEta(pagliaro.getDataDiNascita())+" anni");
        
         
@@ -72,7 +72,10 @@ public class Client {
         int età3= Utility.calcolaEta(d3);
         Indirizzo i3=new Indirizzo ("via variante est",2,"Avellino ","83030","AV","Campania");
         Persona p3=new Persona("Fabio", "Spagnuolo", d3 , i3);
-         System.out.println(p3.getNome()+" "+ p3.getCognome()+"\n"+p3.getIndirizzo()+"età="+età3+"anni");
+        System.out.println("\n"+"***Fabio Spagnuolo***");
+        System.out.println(p3.getNome()+" "+ p3.getCognome());
+         System.out.println	 (p3.getIndirizzo());
+         System.out.println("età:"+età3+"anni");
         
         // Creazione persona - Fabio Irno
          System.out.println("\n**************** Abio Firno *****************");
