@@ -37,10 +37,6 @@ public class Client {
 		ArrayList<Persona> listaPersone = new ArrayList<Persona>();
 		listaPersone.add(giacomo);
 
-		for(int i=0; i<listaPersone.size(); i++)
-			System.out.println(ResidentiCampania.listaPersoneCampania(listaPersone).get(i).getNome()+" "+
-					ResidentiCampania.listaPersoneCampania(listaPersone).get(i).getCognome()+"\n"+
-					ResidentiCampania.listaPersoneCampania(listaPersone).get(i).getIndirizzo().toString());
 
         Persona gabriella = new Persona("Gabriella","Conte",new Date(1988,5,18),new Indirizzo("via amatucci",14,"Avellino","83100","AV","Campania"));
         Utility ut = new Utility();
