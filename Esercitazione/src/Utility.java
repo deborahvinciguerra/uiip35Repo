@@ -10,6 +10,14 @@ public class Utility {
 			eta = anno - annoNascita.getYear();
 			return eta;
 			}
+			
+			public int calcolaEta(Persona persona) {
+				int eta;
+				Date date = new Date();
+				int anno = date.getYear();
+				eta = anno - persona.getDataDiNascita().getYear();
+				return eta;
+				}
 
 			
 			// Test di verifica funzionamento

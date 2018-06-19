@@ -49,14 +49,5 @@ public class Persona {
 		this.indirizzo = indirizzo;
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
->>>>>>> origin/develop
 
 }
