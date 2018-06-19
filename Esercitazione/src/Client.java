@@ -10,7 +10,7 @@ public class Client {
 
 	public static void main(String[] args) {
 
-		 
+		System.out.println("***Francesco La Gala***");
 		//Creazione Francesco La Gala
 		//Indirizzo(String via, int civico, String citta, String cap, String provincia, String regione)
         Indirizzo i1= new Indirizzo ("vico lopa",18,"casamarciano","80032","NA","campania");
