@@ -8,13 +8,20 @@ public class Client {
 	public static void main(String[] args) {
 
 		//Indirizzo(String via, int civico, String citta, String cap, String provincia, String regione)
-        Indirizzo i1= new Indirizzo ("via roma",22,"napoli","80125","NA","campania");
+        Indirizzo i1= new Indirizzo ("vico lopa",18,"casamarciano","80032","NA","campania");
         
-        Date d1= new Date(1990,4,22);
-        
+        Date d1= new Date("12/12/1990");
         
         //Persona(String nome, String cognome, Date dataDiNascita, Indirizzo indirizzo, String regione)
         Persona p1= new Persona ("francesco","la gala",d1,i1);
+        
+        Utility u1 = new Utility ();
+        
+        System.out.println("Nome= "+p1.getNome()+"\nCognome= "+p1.getCognome());
+        System.out.println(p1.getIndirizzo().toString()+"Età= "+u1.calcolaEta(p1));
+        
+        
+       
 
         List<Persona> lista = new ArrayList<Persona>();
         Persona gabriella = new Persona("Gabriella","Conte",new Date(1988,5,18),new Indirizzo("via amatucci",14,"Avellino","83100","AV","Campania"));
