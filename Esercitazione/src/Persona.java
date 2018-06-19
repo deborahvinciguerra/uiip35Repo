@@ -16,6 +16,14 @@ public class Persona {
 		this.dataDiNascita = dataDiNascita;
 		this.indirizzo = indirizzo;
 	}
+	
+	
+
+	public Persona() {
+		super();
+	}
+
+
 
 	public String getNome() {
 		return nome;
@@ -48,6 +56,5 @@ public class Persona {
 	public void setIndirizzo(Indirizzo indirizzo) {
 		this.indirizzo = indirizzo;
 	}
-
 
 }
