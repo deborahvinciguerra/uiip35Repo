@@ -45,12 +45,29 @@ public class Client {
         System.out.println("Indirizzo: "+gabriella.getIndirizzo());
         listaPersone.add(gabriella);
         
+     // Creazione persona - Fabio Irno
+        Indirizzo indirizzo1 = new Indirizzo("Corso Caracciolo",70,"Mercato San Severino","84085","Salerno","Campania");
+		Date nascita1 = new Date("01/03/1987");
+		Persona fabio = new Persona("Fabio","Irno",nascita1,indirizzo1);
+		Utility uf = new Utility();
+		int eta1 = u.calcolaEta(nascita1);
+
+		System.out.println(fabio.getNome()+" "+fabio.getCognome()+"\n"+
+				indirizzo.toString()+"Età = "+eta1+" anni");
+		
+				
+		listaPersone.add(fabio);
+		
+		System.out.println("\n");
+        
 		for(int i=0; i<listaPersone.size(); i++)
 			System.out.println(ResidentiCampania.listaPersoneCampania(listaPersone).get(i).getNome()+" "+
 					ResidentiCampania.listaPersoneCampania(listaPersone).get(i).getCognome()+"\n"+
 					ResidentiCampania.listaPersoneCampania(listaPersone).get(i).getIndirizzo().toString());
 
 
+		
+		
 	}
 
 }
