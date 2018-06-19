@@ -107,6 +107,9 @@ public class Client {
         for(Persona p : residentiInCampania) {
         	System.out.println("Nome: "+p.getNome()+" Cognome: "+p.getCognome());
         }
+        
+        System.out.println(Irno.cercaMaggiore(lista));
+        System.out.println(Irno.cercaMinore(lista));
     
 	}
 
