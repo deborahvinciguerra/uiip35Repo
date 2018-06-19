@@ -33,7 +33,7 @@ public class Client {
         Date dataDomenico = new Date("18/06/1989");
         Indirizzo indirizzoDomenico = new Indirizzo("Via Campitiello", 4, "Limatola", "82030", "BN", "Campania");
         Persona personaDomenico = new Persona ("Domenico", "Guida", dataDomenico, indirizzoDomenico);
-        System.out.println("**********");
+        System.out.println("***** Domenico Guida*****");
         System.out.println("Nome e Cognome: "+ personaDomenico.getNome() + " " + personaDomenico.getCognome());
         System.out.println(personaDomenico.getIndirizzo().toString());
         System.out.println("Età: "+ Utility.calcolaEta(personaDomenico));
@@ -80,7 +80,7 @@ public class Client {
         // Creazione persona - Fabio Irno
         Indirizzo indirizzo1 = new Indirizzo("Corso Caracciolo",70,"Mercato San Severino","84085","Salerno","Campania");
  		Date nascita1 = new Date("01/03/1987");
- 		Persona fabio = new Persona("Fabio","Irno",nascita1,indirizzo1);
+ 		Persona fabio = new Persona("Abio","Firno",nascita1,indirizzo1);
 		System.out.println(fabio.getNome()+" "+fabio.getCognome()+"\n"+indirizzo1.toString()+"Età = "+Utility.calcolaEta(nascita1)+" anni");
 		
 				
