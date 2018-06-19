@@ -44,6 +44,7 @@ public class Client {
 	    Date nascita = new Date("09/05/1989");
 		Persona giacomo = new Persona("Giacomo","Ferraiuolo",nascita,indirizzo);
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 		
 		
@@ -55,6 +56,9 @@ public class Client {
 =======
 		Utility u = new Utility();
 		int eta = u.calcolaEta(nascita);
+=======
+		int eta = Utility.calcolaEta(nascita);
+>>>>>>> origin/develop
 
 		System.out.println(giacomo.getNome()+" "+giacomo.getCognome()+"\n"+
 				indirizzo.toString()+"Età = "+eta+" anni");
@@ -127,10 +131,23 @@ public class Client {
 	 
  
         
+<<<<<<< HEAD
         String str = "Persona: \n";
 		for(Persona per: lista) {
 			str = str + per.getNome() + " - " + per.getCognome() + "\n";
 		}
+=======
+		// Stampa della lista delle persone residenti in campania
+		List<Persona> personeTrovate = new ArrayList<Persona>();
+		personeTrovate = ResidentiCampania.listaPersoneCampania(listaPersone);
+		
+		for(int i=0; i<listaPersone.size(); i++)
+			System.out.println(personeTrovate.get(i).getNome()+" "+
+					personeTrovate.get(i).getCognome()+"\n"+
+					personeTrovate.get(i).getIndirizzo().toString());
+
+
+>>>>>>> origin/develop
 		
 		System.out.println(str);
 	}
