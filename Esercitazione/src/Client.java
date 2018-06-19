@@ -56,7 +56,11 @@ public class Client {
         persone.add(p2);
         
         
-        System.out.println(ResidentiCampania.listaPersoneCampania(persone));
+        ArrayList<Persona> personeCampane=ResidentiCampania.listaPersoneCampania(persone);
+        System.out.println("Persone residenti in campania");
+        for(Persona p : personeCampane) {
+        	System.out.println("Nome: "+p.getNome()+" Cognome: "+p.getCognome());
+        }
         
         
        
