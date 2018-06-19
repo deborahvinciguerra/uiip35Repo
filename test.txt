@@ -1,2 +1,6 @@
 primo test
+<<<<<<< HEAD
 spagnuolo fabio
+=======
+test di modifica
+>>>>>>> origin/develop
