@@ -1,13 +1,14 @@
+import java.util.Date;
 
 public class Persona {
 	
 	private String nome;
 	private String cognome;
-	private String dataDiNascita;
+	private Date dataDiNascita;
 	private Indirizzo indirizzo;
 	private String regione;
 	
-	public Persona(String nome, String cognome, String dataDiNascita, Indirizzo indirizzo, String regione) {
+	public Persona(String nome, String cognome, Date dataDiNascita, Indirizzo indirizzo, String regione) {
 		this.nome = nome;
 		this.cognome = cognome;
 		this.dataDiNascita = dataDiNascita;
@@ -31,11 +32,11 @@ public class Persona {
 		this.cognome = cognome;
 	}
 
-	public String getDataDiNascita() {
+	public Date getDataDiNascita() {
 		return dataDiNascita;
 	}
 
-	public void setDataDiNascita(String dataDiNascita) {
+	public void setDataDiNascita(Date dataDiNascita) {
 		this.dataDiNascita = dataDiNascita;
 	}
 
