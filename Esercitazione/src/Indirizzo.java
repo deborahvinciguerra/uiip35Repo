@@ -68,14 +68,10 @@ public class Indirizzo {
 	}
 
 	// Metodo per visualizzare un indirizzo
-	public String viewIndirizzo() {
-		return "Via: " +via+ ", " +civico+ ", comune di: " +citta+ ", " +cap+ ", provincia di: "+
+	public String toString() {
+		return "Indirizzo: " +via+ ", " +civico+ ", Comune di: " +citta+ ", " +cap+ ", Provincia di: "+
 				provincia+ " (" + regione + ")\n";
-	}
-	
-
-	
-	
+	}	
 	
 
 }
