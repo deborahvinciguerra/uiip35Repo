@@ -26,8 +26,10 @@ public class Client {
         Date dataAngelo= new Date("12/12/1993");
         //Persona(String nome, String cognome, Date dataDiNascita, Indirizzo indirizzo, String regione)
         Persona personaAngelo= new Persona ("Angelo","Clemente",dataAngelo,indirizzoAngelo);
-        System.out.println(personaAngelo.getIndirizzo().toString()+"Età= "+ Utility.calcolaEta(personaAngelo));
-        System.out.println("Nome= "+personaAngelo.getNome()+"\nCognome= "+personaAngelo.getCognome());
+        System.out.println("****ANGELO CLEMENTE******");
+        System.out.println("Nome= "+personaAngelo.getNome()+" , Cognome= "+personaAngelo.getCognome());
+        System.out.println(personaAngelo.getIndirizzo());
+        System.out.println("Età: " + Utility.calcolaEta(personaAngelo));
         
         // Creazione Domenico Guida
         Date dataDomenico = new Date("18/06/1989");
