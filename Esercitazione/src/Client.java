@@ -107,8 +107,11 @@ public class Client {
         System.out.println("Persone residenti in campania");
         for(Persona p : residentiInCampania) {
         	System.out.println("Nome: "+p.getNome()+" Cognome: "+p.getCognome());
+        	
+        	
         }
-    
+        
+    LaGala.piuGiovanePiuAnziano(lista);
 	}
 
 }
