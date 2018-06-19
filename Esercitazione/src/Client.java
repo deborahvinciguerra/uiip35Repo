@@ -43,7 +43,7 @@ public class Client {
 		Date nascita = new Date("09/05/1989");
 		Persona giacomo = new Persona("Giacomo","Ferraiuolo",nascita,indirizzo);
 		int eta = Utility.calcolaEta(nascita);
-		System.out.println("**********"+giacomo.getNome()+" "+giacomo.getCognome()+"**********\n"+
+		System.out.println("********** "+giacomo.getNome()+" "+giacomo.getCognome()+" **********\n"+
 				indirizzo.toString()+"\nEtà = "+eta+" anni");
 
 		//Creazione Gabriella Conte
