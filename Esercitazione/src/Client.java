@@ -59,6 +59,7 @@ public class Client {
         Persona pagliaro= new Persona ("Antonio","Pagliaro",nascitaPagliaro,indirizzoPagliaro);
         
         //stampa persona
+        System.out.println("***Antonio Pagliaro***");
         System.out.println(pagliaro.getNome()+" "+pagliaro.getCognome());
         System.out.println("Indirizzo: "+pagliaro.getIndirizzo());
         System.out.println("Età: "+Utility.calcolaEta(pagliaro.getDataDiNascita())+" anni");
