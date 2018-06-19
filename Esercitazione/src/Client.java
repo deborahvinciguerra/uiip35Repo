@@ -1,8 +1,8 @@
 import java.io.LineNumberInputStream;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
-
 import java.util.Date;
 import java.util.*;
 
@@ -73,6 +73,20 @@ public class Client {
 
         listaPersone.add(gabriella);
         
+        
+        Indirizzo i2= new Indirizzo ("vico lopa",18,"ostia","80032","RO","lazio");
+
+        Persona p2= new Persona ("antonio","Pagliaro",d1,i2);
+        
+        ArrayList<Persona> persone=new ArrayList<Persona>();
+        persone.add(p1);
+        persone.add(p2);
+        
+        
+        System.out.println(ResidentiCampania.listaPersoneCampania(listaPersone));
+        
+        
+       
      // Creazione persona - Fabio Irno
         Indirizzo indirizzo1 = new Indirizzo("Corso Caracciolo",70,"Mercato San Severino","84085","Salerno","Campania");
 		Date nascita1 = new Date("01/03/1987");
