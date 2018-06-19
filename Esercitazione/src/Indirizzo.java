@@ -1,6 +1,7 @@
 
 public class Indirizzo {
 
+
 	// Parametri della classe persona
 	private String via;
 	private int civico;
@@ -73,5 +74,6 @@ public class Indirizzo {
 		return "Indirizzo: " +via+ ", " +civico+ ", Comune di: " +citta+ ", " +cap+ ", Provincia di: "+
 				provincia+ " (" + regione + ")\n";
 	}
+
 
 }
