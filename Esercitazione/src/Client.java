@@ -33,7 +33,7 @@ public class Client {
         Date dataDomenico = new Date("18/06/1989");
         Indirizzo indirizzoDomenico = new Indirizzo("Via Campitiello", 4, "Limatola", "82030", "BN", "Campania");
         Persona personaDomenico = new Persona ("Domenico", "Guida", dataDomenico, indirizzoDomenico);
-        System.out.println("**********");
+        System.out.println("***** Domenico Guida*****");
         System.out.println("Nome e Cognome: "+ personaDomenico.getNome() + " " + personaDomenico.getCognome());
         System.out.println(personaDomenico.getIndirizzo().toString());
         System.out.println("Età: "+ Utility.calcolaEta(personaDomenico));
@@ -69,9 +69,10 @@ public class Client {
         
         //creazione fabio spagnuolo
         Date d3=new Date("27/06/1995");
-        Indirizzo i3=new Indirizzo ("via variante est",2,"avellino ","83030","av","campania");
-        Persona p3=new Persona("Fabio", "spagnuolo", d3 , i3);
-         System.out.println(p3.getNome()+ p3.getCognome() +p3.getIndirizzo());
+        int età3= Utility.calcolaEta(d3);
+        Indirizzo i3=new Indirizzo ("via variante est",2,"Avellino ","83030","AV","Campania");
+        Persona p3=new Persona("Fabio", "Spagnuolo", d3 , i3);
+         System.out.println(p3.getNome()+" "+ p3.getCognome()+"\n"+p3.getIndirizzo()+"età="+età3+"anni");
         
         // Creazione persona - Fabio Irno
         Indirizzo indirizzo1 = new Indirizzo("Corso Caracciolo",70,"Mercato San Severino","84085","Salerno","Campania");
