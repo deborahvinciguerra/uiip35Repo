@@ -1,6 +1,10 @@
 primo test
-<<<<<<< HEAD
+la gala francesco
+Fabio irno
+Clemente Angelo
+Pagliaro Antonio
+Guida Domenico
+Ferraiulo Giacomo
+Conte Gabriella
 spagnuolo fabio
-=======
-test di modifica
->>>>>>> origin/develop
+
