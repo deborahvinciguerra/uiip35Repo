@@ -12,11 +12,7 @@ public class Utility {
 			}
 			
 			public int calcolaEta(Persona persona) {
-				int eta;
-				Date date = new Date();
-				int anno = date.getYear();
-				eta = anno - persona.getDataDiNascita().getYear();
-				return eta;
+				return this.calcolaEta(persona.getDataDiNascita());
 				}
 
 			
