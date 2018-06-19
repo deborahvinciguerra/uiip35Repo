@@ -58,17 +58,9 @@ public class Client {
 
         Persona gabriella = new Persona("Gabriella","Conte",new Date(1988,5,18),new Indirizzo("via amatucci",14,"Avellino","83100","AV","Campania"));
  
-        System.out.println(gabriella.getNome()+" "+gabriella.getCognome());
-        System.out.println("Età: "+Utility.calcolaEta(new Date("18/05/1988"))+" anni");
-        System.out.println("Indirizzo: "+gabriella.getIndirizzo());
-
-        lista.add(gabriella);
-        lista.add(d);
-        lista.add(p1);
-        for(int i=0;i<lista.size();i++)
-        	System.out.println(ResidentiCampania.listaPersoneCampania((ArrayList<Persona>) lista).get(i).getNome());
-
-
+//        System.out.println(gabriella.getNome()+" "+gabriella.getCognome());
+//        System.out.println("Età: "+Utility.calcolaEta(new Date("18/05/1988"))+" anni");
+//        System.out.println("Indirizzo: "+gabriella.getIndirizzo());
 
         listaPersone.add(gabriella);
         
@@ -87,6 +79,7 @@ public class Client {
         ArrayList<Persona> persone=new ArrayList<Persona>();
         persone.add(p1);
         persone.add(pagliaro);
+     
         
         //stampa persone campane
         ArrayList<Persona> personeCampane=ResidentiCampania.listaPersoneCampania(persone);
@@ -94,6 +87,13 @@ public class Client {
         for(Persona p : personeCampane) {
         	System.out.println("Nome: "+p.getNome()+" Cognome: "+p.getCognome());
         }
+        
+        //creazione fabio spagnuolo
+        Date d3=new Date("27/06/1995");
+        Indirizzo i3=new Indirizzo ("via variante est",2,"avellino ","83030","av","campania");
+        Persona p3=new Persona("Fabio", "spagnuolo", d3 , i3);
+         System.out.println(p3.getNome()+ p3.getCognome() +p3.getIndirizzo());
+        
         
         
        
@@ -107,6 +107,12 @@ public class Client {
 		
 				
 		listaPersone.add(fabio);
+		
+		
+		
+		
+		
+		
 		
 		System.out.println("\n");
         
