@@ -43,6 +43,7 @@ public class Client {
 	    Persona p1= new Persona ("francesco","la gala",d1,i1);
 	    Date nascita = new Date("09/05/1989");
 		Persona giacomo = new Persona("Giacomo","Ferraiuolo",nascita,indirizzo);
+<<<<<<< HEAD
 	
 		
 		
@@ -51,6 +52,62 @@ public class Client {
 		System.out.println("Nome: " + myPersona1.getNome());
 		System.out.println("Cognome: " + myPersona1.getCognome());
 		System.out.println("Indirizzo: " + myPersona1.getIndirizzo());
+=======
+		Utility u = new Utility();
+		int eta = u.calcolaEta(nascita);
+
+		System.out.println(giacomo.getNome()+" "+giacomo.getCognome()+"\n"+
+				indirizzo.toString()+"Età = "+eta+" anni");
+
+		ArrayList<Persona> listaPersone = new ArrayList<Persona>();
+		listaPersone.add(giacomo);
+
+
+
+        Persona gabriella = new Persona("Gabriella","Conte",new Date(1988,5,18),new Indirizzo("via amatucci",14,"Avellino","83100","AV","Campania"));
+ 
+        System.out.println(gabriella.getNome()+" "+gabriella.getCognome());
+        System.out.println("Età: "+Utility.calcolaEta(new Date("18/05/1988"))+" anni");
+        System.out.println("Indirizzo: "+gabriella.getIndirizzo());
+
+        lista.add(gabriella);
+        lista.add(d);
+        lista.add(p1);
+        for(int i=0;i<lista.size();i++)
+        	System.out.println(ResidentiCampania.listaPersoneCampania((ArrayList<Persona>) lista).get(i).getNome());
+
+
+
+        listaPersone.add(gabriella);
+        
+        
+        Indirizzo i2= new Indirizzo ("vico lopa",18,"ostia","80032","RO","lazio");
+
+        Persona p2= new Persona ("antonio","Pagliaro",d1,i2);
+        
+        ArrayList<Persona> persone=new ArrayList<Persona>();
+        persone.add(p1);
+        persone.add(p2);
+        
+        
+        ArrayList<Persona> personeCampane=ResidentiCampania.listaPersoneCampania(persone);
+        System.out.println("Persone residenti in campania");
+        for(Persona p : personeCampane) {
+        	System.out.println("Nome: "+p.getNome()+" Cognome: "+p.getCognome());
+        }
+        
+        
+       
+     // Creazione persona - Fabio Irno
+        Indirizzo indirizzo1 = new Indirizzo("Corso Caracciolo",70,"Mercato San Severino","84085","Salerno","Campania");
+		Date nascita1 = new Date("01/03/1987");
+		Persona fabio = new Persona("Fabio","Irno",nascita1,indirizzo1);
+		Utility uf = new Utility();
+		int eta1 = u.calcolaEta(nascita1);
+
+		System.out.println(fabio.getNome()+" "+fabio.getCognome()+"\n"+
+				indirizzo.toString()+"Età = "+eta1+" anni");
+>>>>>>> 396290ef703c226a2a2302c205ce82fbacba0981
 		
 		System.out.println("eta: " + Utility.calcolaEta(myPersona1));
 		
