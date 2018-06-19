@@ -46,8 +46,7 @@ public class Client {
 		Indirizzo indirizzo = new Indirizzo("Via Carmelo Pezzullo",99,"Frattamaggiore","80027","Napoli","Campania");
 		Date nascita = new Date("09/05/1989");
 		Persona giacomo = new Persona("Giacomo","Ferraiuolo",nascita,indirizzo);
-		Utility u = new Utility();
-		int eta = u.calcolaEta(nascita);
+		int eta = Utility.calcolaEta(nascita);
 
 		System.out.println(giacomo.getNome()+" "+giacomo.getCognome()+"\n"+
 				indirizzo.toString()+"Età = "+eta+" anni");
@@ -102,11 +101,9 @@ public class Client {
         Indirizzo indirizzo1 = new Indirizzo("Corso Caracciolo",70,"Mercato San Severino","84085","Salerno","Campania");
 		Date nascita1 = new Date("01/03/1987");
 		Persona fabio = new Persona("Fabio","Irno",nascita1,indirizzo1);
-		Utility uf = new Utility();
-		int eta1 = u.calcolaEta(nascita1);
-
+			
 		System.out.println(fabio.getNome()+" "+fabio.getCognome()+"\n"+
-				indirizzo.toString()+"Età = "+eta1+" anni");
+				indirizzo1.toString()+"Età = "+Utility.calcolaEta(nascita1)+" anni");
 		
 				
 		listaPersone.add(fabio);
@@ -119,10 +116,14 @@ public class Client {
 		
 		System.out.println("\n");
         
+		// Stampa della lista delle persone residenti in campania
+		List<Persona> personeTrovate = new ArrayList<Persona>();
+		personeTrovate = ResidentiCampania.listaPersoneCampania(listaPersone);
+		
 		for(int i=0; i<listaPersone.size(); i++)
-			System.out.println(ResidentiCampania.listaPersoneCampania(listaPersone).get(i).getNome()+" "+
-					ResidentiCampania.listaPersoneCampania(listaPersone).get(i).getCognome()+"\n"+
-					ResidentiCampania.listaPersoneCampania(listaPersone).get(i).getIndirizzo().toString());
+			System.out.println(personeTrovate.get(i).getNome()+" "+
+					personeTrovate.get(i).getCognome()+"\n"+
+					personeTrovate.get(i).getIndirizzo().toString());
 
 
 		
