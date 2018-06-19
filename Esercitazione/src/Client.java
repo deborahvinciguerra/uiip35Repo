@@ -112,6 +112,10 @@ public class Client {
         }
         
     LaGala.piuGiovanePiuAnziano(lista);
+    
+    Pagliaro.piuGiovane(lista);
+    Pagliaro.piuAnziana(lista);
+    
 	}
 
 }
