@@ -10,15 +10,16 @@ public class Client {
 
 	public static void main(String[] args) {
 
-		System.out.println("***Francesco La Gala***");
+		
 		//Creazione Francesco La Gala
 		//Indirizzo(String via, int civico, String citta, String cap, String provincia, String regione)
-        Indirizzo i1= new Indirizzo ("vico lopa",18,"casamarciano","80032","NA","campania");
-        Date d1= new Date("12/12/1990");
+        Indirizzo indirizzoFrancesco= new Indirizzo ("vico lopa",18,"casamarciano","80032","NA","campania");
+        Date dataFrancesco= new Date("12/12/1990");
         //Persona(String nome, String cognome, Date dataDiNascita, Indirizzo indirizzo, String regione)
-        Persona p1= new Persona ("francesco","la gala",d1,i1);
-        System.out.println("Nome= "+p1.getNome()+"\nCognome= "+p1.getCognome());
-        System.out.println(p1.getIndirizzo().toString()+"Età= "+ Utility.calcolaEta(p1));
+        System.out.println("***Francesco La Gala***");
+        Persona personaFrancesco= new Persona ("francesco","la gala",dataFrancesco,indirizzoFrancesco);
+        System.out.println("Nome= "+personaFrancesco.getNome()+"\nCognome= "+personaFrancesco.getCognome());
+        System.out.println(personaFrancesco.getIndirizzo().toString()+"Età= "+ Utility.calcolaEta(personaFrancesco));
 
         //Creazione Angelo Clemente
         //Indirizzo(String via, int civico, String citta, String cap, String provincia, String regione)
@@ -95,7 +96,7 @@ public class Client {
 		lista.add(gabriella);
         lista.add(personaDomenico);
         lista.add(personaAngelo);
-        lista.add(p1);
+        lista.add(personaFrancesco);
         lista.add(giacomo);
         lista.add(fabio);
         lista.add(pagliaro);
