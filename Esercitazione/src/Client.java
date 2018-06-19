@@ -50,7 +50,7 @@ public class Client {
 				indirizzo.toString()+"\nEtà = "+eta+" anni");
 
 		//Creazione Gabriella Conte
-        Persona gabriella = new Persona("Gabriella","Conte",new Date(1988,5,18),new Indirizzo("via amatucci",14,"Avellino","83100","AV","Campania"));
+        Persona gabriella = new Persona("Gabriella","Conte",new Date("18/05/1988"),new Indirizzo("via amatucci",14,"Avellino","83100","AV","Campania"));
         System.out.println("******* Gabriella Conte ******");
         System.out.println(gabriella.getNome()+" "+gabriella.getCognome());
         System.out.println("Indirizzo: "+gabriella.getIndirizzo());
@@ -112,6 +112,12 @@ public class Client {
         }
         
     LaGala.piuGiovanePiuAnziano(lista);
+    
+    Persona giovane = Ferraiuolo.cercaYounger(lista);
+    System.out.println(giovane.getNome()+" "+giovane.getCognome());
+    Persona anziano = Ferraiuolo.cercaOlder(lista);
+    System.out.println(anziano.getNome()+" "+anziano.getCognome());
+    
 	}
 
 }
