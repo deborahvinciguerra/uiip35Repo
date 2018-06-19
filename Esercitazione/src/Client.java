@@ -63,7 +63,7 @@ public class Client {
         //stampa persona
         System.out.println("***Antonio Pagliaro***");
         System.out.println(pagliaro.getNome()+" "+pagliaro.getCognome());
-        System.out.println("Indirizzo: "+pagliaro.getIndirizzo());
+        System.out.println(pagliaro.getIndirizzo());
         System.out.println("Età: "+Utility.calcolaEta(pagliaro.getDataDiNascita())+" anni");
        
         
