@@ -78,9 +78,15 @@ public class Client {
         System.out.println("***Fabio Irno***");
         Indirizzo indirizzo1 = new Indirizzo("Corso Caracciolo",70,"Mercato San Severino","84085","Salerno","Campania");
  		Date nascita1 = new Date("01/03/1987");
+<<<<<<< HEAD
  		Persona fabio = new Persona("Fabio","Irno",nascita1,indirizzo1);
 		System.out.println(fabio.getNome()+" "+fabio.getCognome()+"\n"+indirizzo1.toString()+" \nEtà = "+Utility.calcolaEta(nascita1)+" anni");
 		System.out.println("************");
+=======
+ 		Persona fabio = new Persona("Abio","Firno",nascita1,indirizzo1);
+		System.out.println(fabio.getNome()+" "+fabio.getCognome()+"\n"+indirizzo1.toString()+"Età = "+Utility.calcolaEta(nascita1)+" anni");
+		
+>>>>>>> fc767fec1e2c0df0082037dfd236209d622db640
 				
 
 		ArrayList<Persona> lista = new ArrayList<Persona>();
