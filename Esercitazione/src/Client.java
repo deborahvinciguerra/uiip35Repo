@@ -58,17 +58,9 @@ public class Client {
 
         Persona gabriella = new Persona("Gabriella","Conte",new Date(1988,5,18),new Indirizzo("via amatucci",14,"Avellino","83100","AV","Campania"));
  
-        System.out.println(gabriella.getNome()+" "+gabriella.getCognome());
-        System.out.println("Età: "+Utility.calcolaEta(new Date("18/05/1988"))+" anni");
-        System.out.println("Indirizzo: "+gabriella.getIndirizzo());
-
-        lista.add(gabriella);
-        lista.add(d);
-        lista.add(p1);
-        for(int i=0;i<lista.size();i++)
-        	System.out.println(ResidentiCampania.listaPersoneCampania((ArrayList<Persona>) lista).get(i).getNome());
-
-
+//        System.out.println(gabriella.getNome()+" "+gabriella.getCognome());
+//        System.out.println("Età: "+Utility.calcolaEta(new Date("18/05/1988"))+" anni");
+//        System.out.println("Indirizzo: "+gabriella.getIndirizzo());
 
         listaPersone.add(gabriella);
         
