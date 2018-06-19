@@ -82,9 +82,10 @@ public class Client {
         
         //creazione fabio spagnuolo
         Date d3=new Date("27/06/1995");
-        Indirizzo i3=new Indirizzo ("via variante est",2,"avellino ","83030","av","campania");
-        Persona p3=new Persona("Fabio", "spagnuolo", d3 , i3);
-         System.out.println(p3.getNome()+ p3.getCognome() +p3.getIndirizzo());
+        int età3= Utility.calcolaEta(d3);
+        Indirizzo i3=new Indirizzo ("via variante est",2,"Avellino ","83030","AV","Campania");
+        Persona p3=new Persona("Fabio", "Spagnuolo", d3 , i3);
+         System.out.println(p3.getNome()+" "+ p3.getCognome()+"\n"+p3.getIndirizzo()+"età="+età3+"anni");
         
         
         
