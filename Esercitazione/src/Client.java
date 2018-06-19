@@ -74,7 +74,7 @@ public class Client {
          System.out.println(p3.getNome()+ p3.getCognome() +p3.getIndirizzo());
         
         // Creazione persona - Fabio Irno
-        System.out.println("****Nome****Cognome");
+        System.out.println("***Fabio Irno***");
         Indirizzo indirizzo1 = new Indirizzo("Corso Caracciolo",70,"Mercato San Severino","84085","Salerno","Campania");
  		Date nascita1 = new Date("01/03/1987");
  		Persona fabio = new Persona("Fabio","Irno",nascita1,indirizzo1);
