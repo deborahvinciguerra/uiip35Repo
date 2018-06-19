@@ -56,7 +56,7 @@ public class Client {
         persone.add(p2);
         
         
-        System.out.println(ResidentiCampania.listaPersoneCampania(listaPersone));
+        System.out.println(ResidentiCampania.listaPersoneCampania(persone));
         
         
        
