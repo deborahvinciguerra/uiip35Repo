@@ -46,21 +46,31 @@ public class Client {
         Indirizzo i2= new Indirizzo ("vico lopa",18,"ostia","80032","RO","lazio");
         Persona p2= new Persona ("antonio","Pagliaro",d1,i2);
         ArrayList<Persona> persone=new ArrayList<Persona>();
+ 
+//        System.out.println(gabriella.getNome()+" "+gabriella.getCognome());
+//        System.out.println("Età: "+Utility.calcolaEta(new Date("18/05/1988"))+" anni");
+//        System.out.println("Indirizzo: "+gabriella.getIndirizzo());        
+        
+        //creazione persona pagliaro
+        Indirizzo indirizzoPagliaro= new Indirizzo ("via dante",3,"montecalvo irpino","83037","AV","campania");
+        Date nascitaPagliaro = new Date("13/07/1988");
+        Persona pagliaro= new Persona ("Antonio","Pagliaro",nascitaPagliaro,indirizzoPagliaro);
+        
+        //stampa persona
+        System.out.println(pagliaro.getNome()+" "+pagliaro.getCognome());
+        System.out.println("Età: "+Utility.calcolaEta(pagliaro.getDataDiNascita())+" anni");
+        System.out.println("Indirizzo: "+pagliaro.getIndirizzo());
         
         //creazione fabio spagnuolo
         Date d3=new Date("27/06/1995");
         Indirizzo i3=new Indirizzo ("via variante est",2,"avellino ","83030","av","campania");
         Persona p3=new Persona("Fabio", "spagnuolo", d3 , i3);
-         persone.add(p3);
+         System.out.println(p3.getNome()+ p3.getCognome() +p3.getIndirizzo());
         
         // Creazione persona - Fabio Irno
         Indirizzo indirizzo1 = new Indirizzo("Corso Caracciolo",70,"Mercato San Severino","84085","Salerno","Campania");
  		Date nascita1 = new Date("01/03/1987");
  		Persona fabio = new Persona("Fabio","Irno",nascita1,indirizzo1);
- 			
-        
-       
-     
 		System.out.println(fabio.getNome()+" "+fabio.getCognome()+"\n"+
 				indirizzo1.toString()+"Età = "+Utility.calcolaEta(nascita1)+" anni");
 		
