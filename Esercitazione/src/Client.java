@@ -89,6 +89,13 @@ public class Client {
         	System.out.println("Nome: "+p.getNome()+" Cognome: "+p.getCognome());
         }
         
+        //creazione fabio spagnuolo
+        Date d3=new Date("27/06/1995");
+        Indirizzo i3=new Indirizzo ("via variante est",2,"avellino ","83030","av","campania");
+        Persona p3=new Persona("Fabio", "spagnuolo", d3 , i3);
+         persone.add(p3);
+        
+        
         
        
      // Creazione persona - Fabio Irno
@@ -103,6 +110,12 @@ public class Client {
 		
 				
 		listaPersone.add(fabio);
+		
+		
+		
+		
+		
+		
 		
 		System.out.println("\n");
         
