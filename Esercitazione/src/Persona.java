@@ -1,7 +1,10 @@
 import java.util.Date;
 
+
 public class Persona {
 	
+
+
 	private String nome;
 	private String cognome;
 	private Date dataDiNascita;
@@ -46,13 +49,5 @@ public class Persona {
 		this.indirizzo = indirizzo;
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
 
 }
