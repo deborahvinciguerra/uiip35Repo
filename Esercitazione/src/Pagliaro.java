@@ -4,10 +4,8 @@ public class Pagliaro {
 
 	public static void piuGiovane(ArrayList<Persona> listaPersone) {
 		Persona piuGiovane=listaPersone.get(0);
-		System.out.println("init "+piuGiovane.getCognome());
 		for(Persona p : listaPersone) {
 			if(Utility.calcolaEta(p)<Utility.calcolaEta(piuGiovane)) {
-				System.out.println("si!");
 				piuGiovane=p;
 			}
 		}
