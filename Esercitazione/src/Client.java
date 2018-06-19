@@ -80,7 +80,7 @@ public class Client {
         ArrayList<Persona> persone=new ArrayList<Persona>();
         persone.add(p1);
         persone.add(p2);
-        
+     
         
         ArrayList<Persona> personeCampane=ResidentiCampania.listaPersoneCampania(persone);
         System.out.println("Persone residenti in campania");
@@ -92,7 +92,7 @@ public class Client {
         Date d3=new Date("27/06/1995");
         Indirizzo i3=new Indirizzo ("via variante est",2,"avellino ","83030","av","campania");
         Persona p3=new Persona("Fabio", "spagnuolo", d3 , i3);
-         persone.add(p3);
+         System.out.println(p3.getNome()+ p3.getCognome() +p3.getDataDiNascita()+p3.getIndirizzo());
         
         
         
