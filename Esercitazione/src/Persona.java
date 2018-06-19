@@ -6,14 +6,12 @@ public class Persona {
 	private String cognome;
 	private Date dataDiNascita;
 	private Indirizzo indirizzo;
-	private String regione;
 	
-	public Persona(String nome, String cognome, Date dataDiNascita, Indirizzo indirizzo, String regione) {
+	public Persona(String nome, String cognome, Date dataDiNascita, Indirizzo indirizzo) {
 		this.nome = nome;
 		this.cognome = cognome;
 		this.dataDiNascita = dataDiNascita;
 		this.indirizzo = indirizzo;
-		this.regione = regione;
 	}
 
 	public String getNome() {
@@ -48,13 +46,7 @@ public class Persona {
 		this.indirizzo = indirizzo;
 	}
 
-	public String getRegione() {
-		return regione;
-	}
-
-	public void setRegione(String regione) {
-		this.regione = regione;
-	}
+	
 	
 	
 	
