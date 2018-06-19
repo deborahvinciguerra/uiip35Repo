@@ -3,16 +3,16 @@ public class Persona {
 	
 	private String nome;
 	private String cognome;
-	private int anni;
+	private String dataDiNascita;
 	//indirizzo es via roma 21, 80032, nola (NA)
 	private String indirizzo;
 	private String regione;
 	
 	
-	public Persona(String nome, String cognome, int anni, String indirizzo, String regione) {
+	public Persona(String nome, String cognome, String dataDiNascita, String indirizzo, String regione) {
 		this.nome = nome;
 		this.cognome = cognome;
-		this.anni = anni;
+		this.dataDiNascita= dataDiNascita;
 		this.indirizzo = indirizzo;
 		this.regione = regione;
 	}
@@ -38,13 +38,16 @@ public class Persona {
 	}
 
 
-	public int getAnni() {
-		return anni;
+
+
+
+	public String getDataDiNascita() {
+		return dataDiNascita;
 	}
 
 
-	public void setAnni(int anni) {
-		this.anni = anni;
+	public void setDataDiNascita(String dataDiNascita) {
+		this.dataDiNascita = dataDiNascita;
 	}
 
 
