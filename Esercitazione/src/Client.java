@@ -119,6 +119,9 @@ public class Client {
     LaGala.piuGiovanePiuAnziano(lista);
 
     
+    Pagliaro.piuGiovane(lista);
+    Pagliaro.piuAnziana(lista);
+    
     Persona giovane = Ferraiuolo.cercaYounger(lista);
     System.out.println(giovane.getNome()+" "+giovane.getCognome());
     Persona anziano = Ferraiuolo.cercaOlder(lista);
