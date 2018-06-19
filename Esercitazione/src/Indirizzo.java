@@ -72,7 +72,7 @@ public class Indirizzo {
 	@Override
 	public String toString() {
 		return "Indirizzo: " +via+ ", " +civico+ ", Comune di: " +citta+ ", " +cap+ ", Provincia di: "+
-				provincia+ " (" + regione + ")\n";
+				provincia+ " (" + regione + ")";
 	}
 
 
