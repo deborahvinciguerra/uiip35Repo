@@ -4,7 +4,7 @@ public class Irno {
 
 
 	public static String cercaMaggiore(ArrayList<Persona> list) {
-//classe calcolo maggiore minore
+//classe calcolo
 		Persona max = null;
 
 		int i = 0;
