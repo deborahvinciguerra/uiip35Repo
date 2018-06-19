@@ -2,7 +2,6 @@ import java.util.Date;
 
 
 public class Persona {
-	
 
 
 	private String nome;
@@ -56,5 +55,6 @@ public class Persona {
 	public void setIndirizzo(Indirizzo indirizzo) {
 		this.indirizzo = indirizzo;
 	}
+
 
 }
