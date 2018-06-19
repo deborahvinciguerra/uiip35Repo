@@ -1,6 +1,9 @@
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import java.util.Date;
+
 
 public class Client {
 
@@ -20,6 +23,7 @@ public class Client {
         System.out.println(p1.getIndirizzo().toString()+"Età= "+u1.calcolaEta(p1));
         
 
+
 		// Creazione persona - Giacomo Ferraiuolo
 		Indirizzo indirizzo = new Indirizzo("Via Carmelo Pezzullo",99,"Frattamaggiore","80027","Napoli","Campania");
 		Date nascita = new Date("09/05/1989");
@@ -37,6 +41,20 @@ public class Client {
 			System.out.println(ResidentiCampania.listaPersoneCampania(listaPersone).get(i).getNome()+" "+
 					ResidentiCampania.listaPersoneCampania(listaPersone).get(i).getCognome()+"\n"+
 					ResidentiCampania.listaPersoneCampania(listaPersone).get(i).getIndirizzo().toString());
+
+        Persona gabriella = new Persona("Gabriella","Conte",new Date(1988,5,18),new Indirizzo("via amatucci",14,"Avellino","83100","AV","Campania"));
+        Utility ut = new Utility();
+        System.out.println(gabriella.getNome()+" "+gabriella.getCognome());
+        System.out.println("Età: "+ut.calcolaEta(new Date("18/05/1988"))+" anni");
+        System.out.println("Indirizzo: "+gabriella.getIndirizzo());
+        listaPersone.add(gabriella);
+        
+		for(int i=0; i<listaPersone.size(); i++)
+			System.out.println(ResidentiCampania.listaPersoneCampania(listaPersone).get(i).getNome()+" "+
+					ResidentiCampania.listaPersoneCampania(listaPersone).get(i).getCognome()+"\n"+
+					ResidentiCampania.listaPersoneCampania(listaPersone).get(i).getIndirizzo().toString());
+
+
 	}
 
 }
