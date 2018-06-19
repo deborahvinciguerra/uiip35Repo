@@ -10,15 +10,16 @@ public class Client {
 
 	public static void main(String[] args) {
 
-		System.out.println("***Francesco La Gala***");
+		
 		//Creazione Francesco La Gala
 		//Indirizzo(String via, int civico, String citta, String cap, String provincia, String regione)
-        Indirizzo i1= new Indirizzo ("vico lopa",18,"casamarciano","80032","NA","campania");
-        Date d1= new Date("12/12/1990");
+        Indirizzo indirizzoFrancesco= new Indirizzo ("vico lopa",18,"casamarciano","80032","NA","campania");
+        Date dataFrancesco= new Date("12/12/1990");
         //Persona(String nome, String cognome, Date dataDiNascita, Indirizzo indirizzo, String regione)
-        Persona p1= new Persona ("francesco","la gala",d1,i1);
-        System.out.println("Nome= "+p1.getNome()+"\nCognome= "+p1.getCognome());
-        System.out.println(p1.getIndirizzo().toString()+"Età= "+ Utility.calcolaEta(p1));
+        System.out.println("***Francesco La Gala***");
+        Persona personaFrancesco= new Persona ("francesco","la gala",dataFrancesco,indirizzoFrancesco);
+        System.out.println("Nome= "+personaFrancesco.getNome()+"\nCognome= "+personaFrancesco.getCognome());
+        System.out.println(personaFrancesco.getIndirizzo().toString()+"Età= "+ Utility.calcolaEta(personaFrancesco));
 
         //Creazione Angelo Clemente
         //Indirizzo(String via, int civico, String citta, String cap, String provincia, String regione)
@@ -49,7 +50,7 @@ public class Client {
 				indirizzo.toString()+"\nEtà = "+eta+" anni");
 
 		//Creazione Gabriella Conte
-        Persona gabriella = new Persona("Gabriella","Conte",new Date(1988,5,18),new Indirizzo("via amatucci",14,"Avellino","83100","AV","Campania"));
+        Persona gabriella = new Persona("Gabriella","Conte",new Date("18/05/1988"),new Indirizzo("via amatucci",14,"Avellino","83100","AV","Campania"));
         System.out.println("******* Gabriella Conte ******");
         System.out.println(gabriella.getNome()+" "+gabriella.getCognome());
         System.out.println("Indirizzo: "+gabriella.getIndirizzo());
@@ -95,7 +96,7 @@ public class Client {
 		lista.add(gabriella);
         lista.add(personaDomenico);
         lista.add(personaAngelo);
-        lista.add(p1);
+        lista.add(personaFrancesco);
         lista.add(giacomo);
         lista.add(fabio);
         lista.add(pagliaro);
@@ -106,11 +107,31 @@ public class Client {
         System.out.println("Persone residenti in campania");
         for(Persona p : residentiInCampania) {
         	System.out.println("Nome: "+p.getNome()+" Cognome: "+p.getCognome());
+        	
+        	
         }
         
+
         System.out.println(Irno.cercaMaggiore(lista));
         System.out.println(Irno.cercaMinore(lista));
+
+
+    LaGala.piuGiovanePiuAnziano(lista);
+
     
+    Persona giovane = Ferraiuolo.cercaYounger(lista);
+    System.out.println(giovane.getNome()+" "+giovane.getCognome());
+    Persona anziano = Ferraiuolo.cercaOlder(lista);
+    System.out.println(anziano.getNome()+" "+anziano.getCognome());
+
+    System.out.println(Guida.cercaMaggiore(lista));
+    System.out.println(Guida.cercaMinore(lista));
+
+        System.out.println(Clemente.trovaMinimo(lista));
+        
+        System.out.println(Clemente.trovaMassimo(lista));
+
+
 	}
 
 }
