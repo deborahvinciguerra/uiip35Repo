@@ -12,7 +12,7 @@ public class Utility {
 			}
 			
 			public int calcolaEta(Persona persona) {
-				return this.calcolaEta(persona.getDataDiNascita());
+				return calcolaEta(persona.getDataDiNascita());
 				}
 
 			
