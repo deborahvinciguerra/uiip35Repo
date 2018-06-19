@@ -112,6 +112,8 @@ public class Client {
         }
         
     LaGala.piuGiovanePiuAnziano(lista);
+    System.out.println(Guida.cercaMaggiore(lista));
+    System.out.println(Guida.cercaMinore(lista));
 	}
 
 }
