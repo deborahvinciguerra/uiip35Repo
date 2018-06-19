@@ -10,7 +10,7 @@ public class Client {
 
 	public static void main(String[] args) {
 
-		 
+		System.out.println("***Francesco La Gala***");
 		//Creazione Francesco La Gala
 		//Indirizzo(String via, int civico, String citta, String cap, String provincia, String regione)
         Indirizzo i1= new Indirizzo ("vico lopa",18,"casamarciano","80032","NA","campania");
@@ -26,8 +26,10 @@ public class Client {
         Date dataAngelo= new Date("12/12/1993");
         //Persona(String nome, String cognome, Date dataDiNascita, Indirizzo indirizzo, String regione)
         Persona personaAngelo= new Persona ("Angelo","Clemente",dataAngelo,indirizzoAngelo);
-        System.out.println(personaAngelo.getIndirizzo().toString()+"Età= "+ Utility.calcolaEta(personaAngelo));
-        System.out.println("Nome= "+personaAngelo.getNome()+"\nCognome= "+personaAngelo.getCognome());
+        System.out.println("****ANGELO CLEMENTE******");
+        System.out.println("Nome= "+personaAngelo.getNome()+" , Cognome= "+personaAngelo.getCognome());
+        System.out.println(personaAngelo.getIndirizzo());
+        System.out.println("Età: " + Utility.calcolaEta(personaAngelo));
         
         // Creazione Domenico Guida
         Date dataDomenico = new Date("18/06/1989");
@@ -63,7 +65,7 @@ public class Client {
         //stampa persona
         System.out.println("***Antonio Pagliaro***");
         System.out.println(pagliaro.getNome()+" "+pagliaro.getCognome());
-        System.out.println("Indirizzo: "+pagliaro.getIndirizzo());
+        System.out.println(pagliaro.getIndirizzo());
         System.out.println("Età: "+Utility.calcolaEta(pagliaro.getDataDiNascita())+" anni");
        
         
@@ -72,12 +74,17 @@ public class Client {
         int età3= Utility.calcolaEta(d3);
         Indirizzo i3=new Indirizzo ("via variante est",2,"Avellino ","83030","AV","Campania");
         Persona p3=new Persona("Fabio", "Spagnuolo", d3 , i3);
-         System.out.println(p3.getNome()+" "+ p3.getCognome()+"\n"+p3.getIndirizzo()+"età="+età3+"anni");
+        System.out.println("\n"+"***Fabio Spagnuolo***");
+        System.out.println(p3.getNome()+" "+ p3.getCognome());
+         System.out.println	 (p3.getIndirizzo());
+         System.out.println("età:"+età3+"anni");
         
         // Creazione persona - Fabio Irno
         System.out.println("***Fabio Irno***");
         Indirizzo indirizzo1 = new Indirizzo("Corso Caracciolo",70,"Mercato San Severino","84085","Salerno","Campania");
  		Date nascita1 = new Date("01/03/1987");
+
+				
 
  		Persona fabio = new Persona("Fabio","Irno",nascita1,indirizzo1);
 		System.out.println(fabio.getNome()+" "+fabio.getCognome()+"\n"+indirizzo1.toString()+" \nEtà = "+Utility.calcolaEta(nascita1)+" anni");
