@@ -73,15 +73,22 @@ public class Client {
         listaPersone.add(gabriella);
         
         
-        Indirizzo i2= new Indirizzo ("vico lopa",18,"ostia","80032","RO","lazio");
-
-        Persona p2= new Persona ("antonio","Pagliaro",d1,i2);
+        
+        //creazione persona pagliaro
+        Indirizzo indirizzoPagliaro= new Indirizzo ("via dante",3,"montecalvo irpino","83037","AV","campania");
+        Date nascitaPagliaro = new Date("13/07/1988");
+        Persona pagliaro= new Persona ("Antonio","Pagliaro",nascitaPagliaro,indirizzoPagliaro);
+        
+        //stampa prima
+        System.out.println(pagliaro.getNome()+" "+pagliaro.getCognome());
+        System.out.println("Età: "+Utility.calcolaEta(pagliaro.getDataDiNascita())+" anni");
+        System.out.println("Indirizzo: "+pagliaro.getIndirizzo());
         
         ArrayList<Persona> persone=new ArrayList<Persona>();
         persone.add(p1);
-        persone.add(p2);
+        persone.add(pagliaro);
         
-        
+        //stampa persone campane
         ArrayList<Persona> personeCampane=ResidentiCampania.listaPersoneCampania(persone);
         System.out.println("Persone residenti in campania");
         for(Persona p : personeCampane) {
