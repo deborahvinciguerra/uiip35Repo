@@ -3,13 +3,17 @@ import java.util.Date;
 public class Utility {
 
 
-			public int calcolaEta(Date annoNascita) {
+			public static int calcolaEta(Date annoNascita) {
 			int eta;
 			Date date = new Date();
 			int anno = date.getYear();
 			eta = anno - annoNascita.getYear();
 			return eta;
 			}
+			
+			public static int calcolaEta(Persona persona) {
+				return calcolaEta(persona.getDataDiNascita());
+				}
 
 			
 			// Test di verifica funzionamento
