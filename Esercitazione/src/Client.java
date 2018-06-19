@@ -33,7 +33,7 @@ public class Client {
         Date dataDomenico = new Date("18/06/1989");
         Indirizzo indirizzoDomenico = new Indirizzo("Via Campitiello", 4, "Limatola", "82030", "BN", "Campania");
         Persona personaDomenico = new Persona ("Domenico", "Guida", dataDomenico, indirizzoDomenico);
-        System.out.println("**********");
+        System.out.println("***** Domenico Guida*****");
         System.out.println("Nome e Cognome: "+ personaDomenico.getNome() + " " + personaDomenico.getCognome());
         System.out.println(personaDomenico.getIndirizzo().toString());
         System.out.println("Età: "+ Utility.calcolaEta(personaDomenico));
