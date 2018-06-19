@@ -17,8 +17,8 @@ public class Client {
         Date d1= new Date("12/12/1990");
         //Persona(String nome, String cognome, Date dataDiNascita, Indirizzo indirizzo, String regione)
         Persona p1= new Persona ("francesco","la gala",d1,i1);
-        System.out.println(p1.getIndirizzo().toString()+"Età= "+ Utility.calcolaEta(p1));
         System.out.println("Nome= "+p1.getNome()+"\nCognome= "+p1.getCognome());
+        System.out.println(p1.getIndirizzo().toString()+"Età= "+ Utility.calcolaEta(p1));
 
         //Creazione Angelo Clemente
         //Indirizzo(String via, int civico, String citta, String cap, String provincia, String regione)
@@ -33,8 +33,9 @@ public class Client {
         Date dataDomenico = new Date("18/06/1989");
         Indirizzo indirizzoDomenico = new Indirizzo("Via Campitiello", 4, "Limatola", "82030", "BN", "Campania");
         Persona personaDomenico = new Persona ("Domenico", "Guida", dataDomenico, indirizzoDomenico);
+        System.out.println("**********");
         System.out.println("Nome e Cognome: "+ personaDomenico.getNome() + " " + personaDomenico.getCognome());
-        System.out.println("Indirizzo: " + personaDomenico.getIndirizzo().toString());
+        System.out.println(personaDomenico.getIndirizzo().toString());
         System.out.println("Età: "+ Utility.calcolaEta(personaDomenico));
 
 		// Creazione persona - Giacomo Ferraiuolo
@@ -42,14 +43,15 @@ public class Client {
 		Date nascita = new Date("09/05/1989");
 		Persona giacomo = new Persona("Giacomo","Ferraiuolo",nascita,indirizzo);
 		int eta = Utility.calcolaEta(nascita);
-		System.out.println(giacomo.getNome()+" "+giacomo.getCognome()+"\n"+
-				indirizzo.toString()+"Età = "+eta+" anni");
+		System.out.println("********** "+giacomo.getNome()+" "+giacomo.getCognome()+" **********\n"+
+				indirizzo.toString()+"\nEtà = "+eta+" anni");
 
 		//Creazione Gabriella Conte
         Persona gabriella = new Persona("Gabriella","Conte",new Date(1988,5,18),new Indirizzo("via amatucci",14,"Avellino","83100","AV","Campania"));
+        System.out.println("******* Gabriella Conte ******");
         System.out.println(gabriella.getNome()+" "+gabriella.getCognome());
-        System.out.println("Età: "+Utility.calcolaEta(new Date("18/05/1988"))+" anni");
         System.out.println("Indirizzo: "+gabriella.getIndirizzo());
+        System.out.println("Età: "+Utility.calcolaEta(new Date("18/05/1988"))+" anni\n");
         
         
         
@@ -59,9 +61,11 @@ public class Client {
         Persona pagliaro= new Persona ("Antonio","Pagliaro",nascitaPagliaro,indirizzoPagliaro);
         
         //stampa persona
+        System.out.println("***Antonio Pagliaro***");
         System.out.println(pagliaro.getNome()+" "+pagliaro.getCognome());
-        System.out.println("Età: "+Utility.calcolaEta(pagliaro.getDataDiNascita())+" anni");
         System.out.println("Indirizzo: "+pagliaro.getIndirizzo());
+        System.out.println("Età: "+Utility.calcolaEta(pagliaro.getDataDiNascita())+" anni");
+       
         
         //creazione fabio spagnuolo
         Date d3=new Date("27/06/1995");
