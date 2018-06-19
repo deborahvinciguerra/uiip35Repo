@@ -60,8 +60,9 @@ public class Client {
         
         //stampa persona
         System.out.println(pagliaro.getNome()+" "+pagliaro.getCognome());
-        System.out.println("Età: "+Utility.calcolaEta(pagliaro.getDataDiNascita())+" anni");
         System.out.println("Indirizzo: "+pagliaro.getIndirizzo());
+        System.out.println("Età: "+Utility.calcolaEta(pagliaro.getDataDiNascita())+" anni");
+       
         
         //creazione fabio spagnuolo
         Date d3=new Date("27/06/1995");
