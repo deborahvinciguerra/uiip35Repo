@@ -33,4 +33,4 @@ INSERT INTO volo (idVolo, giornoSett, cittaPart, cittaArr, tipoAereo, oraPartenz
 
 
 				(143, 'venerdi', 'bologna', 'bergamo', '787', 9, 11);
-#Francesco La Gala
+#Francesco La Gala  
