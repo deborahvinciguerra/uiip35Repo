@@ -1,17 +1,25 @@
 
 
-#inizio inserimento aeroporto Pagliaro
-INSERT INTO aeroporto (citta,nazione,npiste) VALUES
-					('Londra', 'Inghilterra',10);
-                    
- INSERT INTO aereo (tipoAereo, nPass, quantitaMerci) Values
-                  ( 'B737', 100, 1000);
-   
-INSERT INTO volo (idVolo, giornoSett, cittaPart, cittaArr, tipoAereo, oraPartenza, oraArrivo) Values
-				 ( 33, 'Lunedì', 'Londra', 'Parigi', 'B737', 10, 11 );                   
-                    
-#fine inserimento aereoporto Pagliaro
+
+
 					
+
+#Inserimento di un volo da torino, Fabio Irno
+
+INSERT INTO aeroporto(citta,nazione,npiste) VALUES
+						('Torino','Italia',10),
+                        ('Palermo','Italia',2);
+                        
+INSERT INTO aereo(tipoAereo,nPass,quantitaMerci) VALUES
+						('747',250,300);
+                        
+INSERT INTO volo(idVolo,giornoSett,cittaPart,cittaArr,tipoAereo,oraPartenza,oraArrivo) VALUES
+						(10,'Mercoledì','Torino','Palermo','747',10,14);
+                        
+
+## fine Fabio Irno
+	
+
 
 # #####################
 # DUMPING DATA VOLO 
@@ -29,6 +37,23 @@ INSERT INTO volo (idVolo, giornoSett, cittaPart, cittaArr, tipoAereo, oraPartenz
 				 ( 1, 'Martedì', 'Rio de Janeiro', 'Tokyo', 'B737', 15, 23 );
 #Domenico Guida
 
+
+#inizio inserimento aeroporto Pagliaro
+INSERT INTO aeroporto (citta,nazione,npiste) VALUES
+					('Londra', 'Inghilterra',10);
+                    
+ INSERT INTO aereo (tipoAereo, nPass, quantitaMerci) Values
+                  ( 'B737', 100, 1000);
+   
+INSERT INTO volo (idVolo, giornoSett, cittaPart, cittaArr, tipoAereo, oraPartenza, oraArrivo) Values
+				 ( 33, 'Lunedì', 'Londra', 'Parigi', 'B737', 10, 11 );                   
+                    
+#fine inserimento aereoporto Pagliaro
+
+
+
+
+
 #Francesco La Gala
 INSERT INTO aeroporto (citta, nazione, nPiste) VALUES
 					('bologna', 'italia',4),
@@ -40,6 +65,14 @@ INSERT INTO aereo (tipoAereo, nPass, quantitaMerci) VALUES
 				('787', 50, 2341);
 				
 INSERT INTO volo (idVolo, giornoSett, cittaPart, cittaArr, tipoAereo, oraPartenza, oraArrivo) VALUES
+
+
+				(143, 'venerdi', 'bologna', 'bergamo', '787', 930, 1130);
+#Francesco La Gala
+
+
+				(143, 'venerdi', 'bologna', 'bergamo', '787', 9, 11);
+#Francesco La Gala  
 
 				(143, 'venerdi', 'bologna', 'bergamo', '787', 9, 11);
 #Francesco La Gala
@@ -65,4 +98,4 @@ INSERT INTO volo (idVolo, giornoSett, cittaPart, cittaArr, tipoAereo, oraPartenz
 # Inserimento Giacomo Ferraiuolo
 
 
->>>>>>> be42a7c864e6468e6646614381d068e1191b0155
+
