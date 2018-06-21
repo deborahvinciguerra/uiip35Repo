@@ -121,7 +121,7 @@ public class Client {
     
     Pagliaro.piuGiovane(lista);
     Pagliaro.piuAnziana(lista);
-    
+
     Persona giovane = Ferraiuolo.cercaYounger(lista);
     System.out.println(giovane.getNome()+" "+giovane.getCognome());
     Persona anziano = Ferraiuolo.cercaOlder(lista);
@@ -133,7 +133,10 @@ public class Client {
         System.out.println(Clemente.trovaMinimo(lista));
         
         System.out.println(Clemente.trovaMassimo(lista));
-
+        
+        System.out.println(Spagnuolo.trovaMassimo(lista));
+        System.out.println(Spagnuolo.trovaMinimo(lista));
+          
 
 	}
 
