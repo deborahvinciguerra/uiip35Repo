@@ -23,8 +23,8 @@ public class Connessione {
 		}
 		
 		String connectionString = "jdbc:mysql://localhost:3306/RubricaTelefonica?user=root&password=root";
-		String query="INSERT INTO Utente (numero, name, cognome, smartphone) VALUES" + 
-				"('34949', 'Domenico','Guida', 1)";
+		String query="INSERT INTO contact (number, name, cognome, smartphone) VALUES" + 
+				"('3494993471', 'Domenico','Guida', 1)";
 		 
 		 
 		try {
