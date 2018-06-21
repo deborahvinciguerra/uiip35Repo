@@ -103,7 +103,8 @@ insert into aereo (tipoAereo, nPass, quantitaMerci) values
                    
                    
 insert into volo (idVolo, giornoSett, cittaPart, cittaArr, tipoAereo, oraPartenza, oraArrivo) values
-				(2, 'lunedi' , 'Amsterdam' , 'Sanpietroburgo', 'A380', 04, 06);
+				(2, 'lunedi' , 'Amsterdam' , 'Sanpietroburgo', 'A380', 04, 06),
+                (5, 'lunedi' , 'Napoli' , 'Parigi', 'A380', 04, 06);
                 
                 
 # Angelo Clemente
