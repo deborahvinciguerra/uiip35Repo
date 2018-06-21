@@ -1,4 +1,4 @@
-drop database viaggi;
+drop database if exists viaggi;
 create database if not exists viaggi;
 
 use viaggi;
