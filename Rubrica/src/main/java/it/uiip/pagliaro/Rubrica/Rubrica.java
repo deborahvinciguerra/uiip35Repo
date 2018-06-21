@@ -2,7 +2,7 @@ package it.uiip.pagliaro.Rubrica;
 
 import java.sql.*;
 
-import com.mysql.jdbc.Driver;
+
 
 
 public class Rubrica {
@@ -17,7 +17,7 @@ public class Rubrica {
 	
 public void insert(Utente utente){
 
-		String sql = "INSERT INTO UTNTE " +
+		String sql = "INSERT INTO UTENTE " +
 				"(NOME, COGNOME,NUMERO,PHONE) VALUES (?, ?, ?,?)";
 		Connection conn = null;
 		
@@ -57,65 +57,65 @@ public void insert(Utente utente){
 			}
 		}
 	}
-//
-//public void visualizzaAnagrafica(Utente u) {
-//	
-//
-//	String sql = "Select nome,cognome from Utente "
-//			+ "where numero="+u.getNumero();
-//	Connection conn = null;
-//	
-//	try {
-//		try {
-//			Class.forName("com.mysql.jdbc.Driver");
-//		} catch (ClassNotFoundException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//
-//		try {
-//			conn = DriverManager.getConnection(dbUtil.getUrl(),dbUtil.getUsername(),dbUtil.getPassword());
-//			PreparedStatement ps = conn.prepareStatement(sql);
-//			
-//			ResultSet rs = ps.executeQuery(sql);
-//
-//		      //STEP 5: Extract data from result set
-//		      while(rs.next()){
-//		    //Retrieve by column name
-//	         String nome = rs.getString("nome");
-//	         String cognome = rs.getString("cognome");
-//	        
-//
-//	         //Display values
-//	         System.out.print("Nome: " + nome);
-//	         System.out.print(", Cognome: " + cognome);
-//	      }
-//	      //STEP 6: Clean-up environment
-//	      rs.close();
-//	      ps.close();
-//	      conn.close();
-//			
-//			
-//			
-//		} catch (SQLException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		
-//		
-//}
-//	finally {
-//		if (conn != null) {
-//			try {
-//				conn.close();
-//			} catch (SQLException e) {}
-//		}
-//	}
-//	
-//}
-//
-//
-//
+
+public void visualizzaAnagrafica(Utente u) {
+	
+
+	String sql = "Select nome,cognome from Utente "
+			+ "where numero="+u.getNumero();
+	Connection conn = null;
+	
+	try {
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		try {
+			conn = DriverManager.getConnection(dbUtil.getUrl(),dbUtil.getUsername(),dbUtil.getPassword());
+			PreparedStatement ps = conn.prepareStatement(sql);
+			
+			ResultSet rs = ps.executeQuery(sql);
+
+		      //STEP 5: Extract data from result set
+		      while(rs.next()){
+		    //Retrieve by column name
+	         String nome = rs.getString("nome");
+	         String cognome = rs.getString("cognome");
+	        
+
+	         //Display values
+	         System.out.print("Nome: " + nome);
+	         System.out.print(", Cognome: " + cognome);
+	      }
+	      //STEP 6: Clean-up environment
+	      rs.close();
+	      ps.close();
+	      conn.close();
+			
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+}
+	finally {
+		if (conn != null) {
+			try {
+				conn.close();
+			} catch (SQLException e) {}
+		}
+	}
+	
+}
+
+
+
 //
 //public void visualizzaTelefono(Utente u) {
 //	

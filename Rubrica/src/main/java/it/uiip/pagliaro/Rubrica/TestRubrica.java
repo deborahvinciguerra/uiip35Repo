@@ -7,11 +7,12 @@ public class TestRubrica {
 		DBConnectionUtility dbUtil=new DBConnectionUtility();
 		Rubrica rubrica = new Rubrica();
 		
-		Utente u=new Utente("toni", "pagliaro", "33368293", 1);
+		Utente u=new Utente("toni", "pagliaro", "4343", 1);
 		
 		rubrica.setConnectionData(dbUtil);
 		
 		rubrica.insert(u);
+		rubrica.visualizzaAnagrafica(u);
 		
 
 	}
