@@ -112,15 +112,15 @@ public class Client {
         }
         
 
-        System.out.println(Irno.cercaMaggiore(lista));
-        System.out.println(Irno.cercaMinore(lista));
+//        System.out.println(Irno.cercaMaggiore(lista));
+//        System.out.println(Irno.cercaMinore(lista));
 
 
     LaGala.piuGiovanePiuAnziano(lista);
 
     
-    Pagliaro.piuGiovane(lista);
-    Pagliaro.piuAnziana(lista);
+//    Pagliaro.piuGiovane(lista);
+//    Pagliaro.piuAnziana(lista);
 
     Persona giovane = Ferraiuolo.cercaYounger(lista);
     System.out.println(giovane.getNome()+" "+giovane.getCognome());
@@ -134,8 +134,8 @@ public class Client {
         
         System.out.println(Clemente.trovaMassimo(lista));
         
-        System.out.println(Spagnuolo.trovaMassimo(lista));
-        System.out.println(Spagnuolo.trovaMinimo(lista));
+//        System.out.println(Spagnuolo.trovaMassimo(lista));
+//        System.out.println(Spagnuolo.trovaMinimo(lista));
           
 
 	}
