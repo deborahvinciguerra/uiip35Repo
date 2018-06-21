@@ -1,5 +1,9 @@
-drop database viaggi;
+drop database if exists viaggi;
+<<<<<<< HEAD
+create database  viaggi;
+=======
 create database if not exists viaggi;
+>>>>>>> ac382193c2d5c7befa16a7747362cab20984f670
 
 use viaggi;
 
