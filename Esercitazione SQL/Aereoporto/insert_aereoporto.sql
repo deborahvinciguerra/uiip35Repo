@@ -27,6 +27,10 @@ INSERT INTO aereo (tipoAereo, nPass, quantitaMerci) VALUES
 				('787', 50, 2341);
 				
 INSERT INTO volo (idVolo, giornoSett, cittaPart, cittaArr, tipoAereo, oraPartenza, oraArrivo) VALUES
+
 				(143, 'venerdi', 'bologna', 'bergamo', '787', 930, 1130);
 #Francesco La Gala
 
+
+				(143, 'venerdi', 'bologna', 'bergamo', '787', 9, 11);
+#Francesco La Gala
