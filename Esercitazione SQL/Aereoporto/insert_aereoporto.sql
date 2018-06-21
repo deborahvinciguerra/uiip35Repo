@@ -105,6 +105,22 @@ insert into aereo (tipoAereo, nPass, quantitaMerci) values
 insert into volo (idVolo, giornoSett, cittaPart, cittaArr, tipoAereo, oraPartenza, oraArrivo) values
 				(2, 'lunedi' , 'Amsterdam' , 'Sanpietroburgo', 'A380', 04, 06),
                 (5, 'lunedi' , 'Napoli' , 'Parigi', 'A380', 04, 06);
+
+				(2, 'lunedi' , 'Napoli' , 'Sanpietroburgo', 'A380', 04, 06);
+
                 
                 
 # Angelo Clemente
+
+insert into volo (idVolo, giornoSett, cittaPart, cittaArr, tipoAereo, oraPartenza, oraArrivo) values
+                (224, 'lunedi' , 'Bologna' , 'Parigi', 'B787', 08, 10),
+                (212, 'martedi' , 'Parigi' , 'Londra', 'B787', 9, 11),
+                (288, 'lunedi' , 'Londra' , 'Nizza', 'A380', 12, 16),
+                (299, 'giovedì' , 'Sanpietroburgo' , 'Parigi', 'A380', 4, 6),
+                (277, 'lunedi' , 'Amsterdam' , 'Tokyo', 'B787', 15, 19),
+                (266, 'sabato' , 'Amsterdam' , 'Rio de Janeiro', 'B787', 7, 9),
+                (255, 'domenica' , 'New York' , 'Londra', 'B747', 6, 8),
+                (244, 'lunedi' , 'Tokyo' , 'Napoli', 'B747', 16, 17),
+                (233, 'venerdì' , 'Nizza' , 'Londra', 'A380', 20, 21),
+                (222, 'martedì' , 'Parigi' , 'Sanpietroburgo', 'B747', 19, 22),
+                (6, 'lunedi' , 'Napoli' , 'Parigi', 'A380', 04, 06);
