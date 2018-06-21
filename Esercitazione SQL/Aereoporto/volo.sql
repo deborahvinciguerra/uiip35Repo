@@ -1,6 +1,5 @@
 drop database if exists viaggi;
 create database  viaggi;
-create database if not exists viaggi;
 
 use viaggi;
 
