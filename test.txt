@@ -1,4 +1,7 @@
 primo test
+<<<<<<< HEAD
+Irno Fabio 
+=======
 la gala francesco
 Fabio irno
 Clemente Angelo
@@ -8,3 +11,4 @@ Ferraiulo Giacomo
 Conte Gabriella
 spagnuolo fabio
 
+>>>>>>> origin/develop
