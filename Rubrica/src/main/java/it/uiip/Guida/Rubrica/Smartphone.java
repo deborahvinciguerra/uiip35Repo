@@ -1,0 +1,159 @@
+package it.uiip.Guida.Rubrica;
+
+public class Smartphone {
+	
+	private int id;
+	private String nome;
+	private String ram;
+	private String cpu;
+	private int displayPpi;
+	private String displaySize;
+	private String displayResolution;
+	private String size;
+	private int weight;
+	private String notes;
+	private int brand;
+	private int opSys;
+	
+	
+	public Smartphone(int id, String nome, String ram, String cpu, int displayPpi, String displaySize,
+			String displayResolution, String size, int weight, String notes, int brand, int opSys) {
+		this.id = id;
+		this.nome = nome;
+		this.ram = ram;
+		this.cpu = cpu;
+		this.displayPpi = displayPpi;
+		this.displaySize = displaySize;
+		this.displayResolution = displayResolution;
+		this.size = size;
+		this.weight = weight;
+		this.notes = notes;
+		this.brand = brand;
+		this.opSys = opSys;
+	}
+
+
+	public int getId() {
+		return id;
+	}
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
+	public String getNome() {
+		return nome;
+	}
+
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+
+	public String getRam() {
+		return ram;
+	}
+
+
+	public void setRam(String ram) {
+		this.ram = ram;
+	}
+
+
+	public String getCpu() {
+		return cpu;
+	}
+
+
+	public void setCpu(String cpu) {
+		this.cpu = cpu;
+	}
+
+
+	public int getDisplayPpi() {
+		return displayPpi;
+	}
+
+
+	public void setDisplayPpi(int displayPpi) {
+		this.displayPpi = displayPpi;
+	}
+
+
+	public String getDisplaySize() {
+		return displaySize;
+	}
+
+
+	public void setDisplaySize(String displaySize) {
+		this.displaySize = displaySize;
+	}
+
+
+	public String getDisplayResolution() {
+		return displayResolution;
+	}
+
+
+	public void setDisplayResolution(String displayResolution) {
+		this.displayResolution = displayResolution;
+	}
+
+
+	public String getSize() {
+		return size;
+	}
+
+
+	public void setSize(String size) {
+		this.size = size;
+	}
+
+
+	public int getWeight() {
+		return weight;
+	}
+
+
+	public void setWeight(int weight) {
+		this.weight = weight;
+	}
+
+
+	public String getNotes() {
+		return notes;
+	}
+
+
+	public void setNotes(String notes) {
+		this.notes = notes;
+	}
+
+
+	public int getBrand() {
+		return brand;
+	}
+
+
+	public void setBrand(int brand) {
+		this.brand = brand;
+	}
+
+
+	public int getOpSys() {
+		return opSys;
+	}
+
+
+	public void setOpSys(int opSys) {
+		this.opSys = opSys;
+	}
+	
+	
+
+	
+
+}
